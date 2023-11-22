@@ -3,8 +3,11 @@
 EMoG: Synthesizing Emotive Co-speech 3D Gesture with Diffusion Model 
 </h1>
 
+# Updates
+The foundational code has been released, with more to follow soon.
+
 # Dataset
-In this project, we harness the power of the BEAT dataset to train our models. The dataset is meticulously partitioned and processed in accordance with the methodologies detailed at BEAT(https://github.com/PantoMatrix/BEAT).
+In this project, we harness the power of the BEAT dataset to train our models. The dataset is meticulously partitioned and processed in accordance with the methodologies detailed at [BEAT](https://github.com/PantoMatrix/BEAT).
     
 # Reproduction
 ### Train EMoG
@@ -22,7 +25,7 @@ In this project, we harness the power of the BEAT dataset to train our models. T
         └── EMoG
     ```
 2. download the scripts to `codes/EMoG/`
-3. download full dataset to `datasets/beat`, process datas via method of BEAT(https://github.com/PantoMatrix/BEAT).
+3. download full dataset to `datasets/beat`, process datas via method of [BEAT](https://github.com/PantoMatrix/BEAT).
 7. run ```python -u /code/MotionDiffuse/text2motion/tools/train.py \
     --name  EMoG \
     --batch_size  128 \
@@ -36,4 +39,5 @@ In this project, we harness the power of the BEAT dataset to train our models. T
     --dim_pose 141 \
     --multi_length_training 0.2 0.4 0.6 0.8 1.0 \``` 
 
-
+# Acknowledgement
+This code is developed on top of [MotionDiffuse: Text-Driven Human Motion Generation with Diffusion Model](https://github.com/mingyuan-zhang/MotionDiffuse).
